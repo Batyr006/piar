@@ -119,10 +119,23 @@ if (heroSection) {
 
 // ===== ТАЙМЕР ОБРАТНОГО ОТСЧЕТА =====
 function updateCountdown() {
-    // Установите дату защиты проектов
-    const examDate = new Date('2025-12-30T10:00:00').getTime();
-    const now = new Date().getTime();
-    const timeLeft = examDate - now;
+    // Получаем текущую дату и время
+    const now = new Date();
+    
+    // Устанавливаем сегодняшнюю дату на 13:00
+    const targetTime = new Date();
+    targetTime.setHours(13, 0, 0, 0);
+    
+    // Если сейчас уже после 13:00, показываем нули
+    if (now.getHours() >= 13 && now.getMinutes() > 0) {
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+        return;
+    }
+    
+    const timeLeft = targetTime.getTime() - now.getTime();
     
     if (timeLeft < 0) {
         document.getElementById('days').textContent = '00';
