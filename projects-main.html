@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Профи | Наши проекты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Загрузка проектов...</p>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-bullhorn logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-main">PR Профи</span>
+                    <span class="logo-sub">by Батырхан & Никита</span>
+                </div>
+            </a>
+            
+            <nav class="nav">
+                <button class="nav-toggle" id="navToggle">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Главная</a></li>
+                    <li><a href="team.html" class="nav-link"><i class="fas fa-users"></i>Команда</a></li>
+                    <li><a href="course.html" class="nav-link"><i class="fas fa-book-open"></i>Курс</a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-chart-line"></i>Навыки</a></li>
+                    <li><a href="achievements.html" class="nav-link"><i class="fas fa-trophy"></i>Достижения</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="projects-main.html" class="nav-link active nav-projects"><i class="fas fa-rocket"></i>Проекты</a></li>
+                    <li><a href="contacts.html" class="nav-link nav-contacts"><i class="fas fa-envelope"></i>Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h1 class="page-title">Наши проекты</h1>
+            <p class="page-subtitle">4 практических проекта, выполненных в рамках курса PR. Каждый проект демонстрирует конкретные навыки и подходы.</p>
+        </div>
+    </section>
+
+    <!-- Фильтры проектов -->
+    <section class="projects-filters">
+        <div class="container">
+            <div class="filter-section">
+                <h3><i class="fas fa-filter"></i> Фильтр проектов</h3>
+                <div class="filter-controls">
+                    <!-- Фильтр по типу -->
+                    <div class="filter-group">
+                        <div class="filter-label">Тип проекта:</div>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">Все</button>
+                            <button class="filter-btn" data-filter="individual">Индивидуальные</button>
+                            <button class="filter-btn" data-filter="group">Групповые</button>
+                            <button class="filter-btn" data-filter="exam">Экзаменационные</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Фильтр по автору -->
+                    <div class="filter-group">
+                        <div class="filter-label">Автор:</div>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-author="all">Все</button>
+                            <button class="filter-btn" data-author="batyrkhan">Батырхан</button>
+                            <button class="filter-btn" data-author="nikita">Никита</button>
+                            <button class="filter-btn" data-author="both">Совместные</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Фильтр по теме -->
+                    <div class="filter-group">
+                        <div class="filter-label">Тема:</div>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-topic="all">Все</button>
+                            <button class="filter-btn" data-topic="strategy">Стратегия</button>
+                            <button class="filter-btn" data-topic="content">Контент</button>
+                            <button class="filter-btn" data-topic="analytics">Аналитика</button>
+                            <button class="filter-btn" data-topic="smm">SMM</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Сортировка -->
+                    <div class="filter-group">
+                        <div class="filter-label">Сортировка:</div>
+                        <select class="sort-select" id="sortSelect">
+                            <option value="date-desc">По дате (новые сначала)</option>
+                            <option value="date-asc">По дате (старые сначала)</option>
+                            <option value="name-asc">По названию (А-Я)</option>
+                            <option value="name-desc">По названию (Я-А)</option>
+                            <option value="rating-desc">По оценке (высокие сначала)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="filter-stats">
+                    <span id="projectsCount">4</span> проекта найдено
+                    <button class="reset-filters" id="resetFilters">
+                        <i class="fas fa-redo"></i> Сбросить фильтры
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сетка проектов -->
+    <section class="projects-grid-section">
+        <div class="container">
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Проект 1: Батырхана -->
+                <div class="project-card" 
+                     data-type="individual" 
+                     data-author="batyrkhan" 
+                     data-topic="strategy analytics"
+                     data-date="2025-10-15"
+                     data-rating="95"
+                     data-name="Анализ ЦА">
+                    <div class="project-card-header">
+                        <div class="project-badges">
+                            <span class="badge badge-individual">Индивидуальный</span>
+                            <span class="badge badge-strategy">Стратегия</span>
+                        </div>
+                        <div class="project-rating">
+                            <i class="fas fa-star"></i>
+                            <span>95/100</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Анализ целевой аудитории">
+                        <div class="project-overlay">
+                            <a href="project-batyrkhan.html" class="view-project">
+                                <i class="fas fa-eye"></i>
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-author">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Батырхан</span>
+                        </div>
+                        <h3 class="project-title">Анализ целевой аудитории стартапа</h3>
+                        <p class="project-description">Полное исследование ЦА технологического стартапа с сегментацией и рекомендациями по коммуникации.</p>
+                        
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="far fa-calendar"></i>
+                                <span>15.10.2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <span>3 недели</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>25 страниц</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Исследования</span>
+                            <span class="project-tag">Аналитика</span>
+                            <span class="project-tag">Сегментация</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="project-batyrkhan.html" class="btn btn-primary">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="dropdown">
+                                <button class="btn btn-outline dropdown-toggle">
+                                    <i class="fas fa-download"></i> Материалы
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="assets/documents/pdf/batyrkhan-analysis.pdf" class="dropdown-item" download>
+                                        <i class="far fa-file-pdf"></i> Полный отчет (PDF)
+                                    </a>
+                                    <a href="assets/documents/word/batyrkhan-presentation.pptx" class="dropdown-item" download>
+                                        <i class="far fa-file-powerpoint"></i> Презентация (PPTX)
+                                    </a>
+                                    <a href="assets/documents/excel/batyrkhan-data.xlsx" class="dropdown-item" download>
+                                        <i class="far fa-file-excel"></i> Данные исследования (XLSX)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 2: Никиты -->
+                <div class="project-card" 
+                     data-type="individual" 
+                     data-author="nikita" 
+                     data-topic="content smm"
+                     data-date="2025-10-25"
+                     data-rating="92"
+                     data-name="Контент план">
+                    <div class="project-card-header">
+                        <div class="project-badges">
+                            <span class="badge badge-individual">Индивидуальный</span>
+                            <span class="badge badge-content">Контент</span>
+                        </div>
+                        <div class="project-rating">
+                            <i class="fas fa-star"></i>
+                            <span>92/100</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Контент-план SMM">
+                        <div class="project-overlay">
+                            <a href="project-nikita.html" class="view-project">
+                                <i class="fas fa-eye"></i>
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-author">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Никита</span>
+                        </div>
+                        <h3 class="project-title">Контент-план для SMM продвижения</h3>
+                        <p class="project-description">Разработка комплексного контент-плана для социальных сетей бренда на 3 месяца с анализом конкурентов.</p>
+                        
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="far fa-calendar"></i>
+                                <span>25.10.2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <span>2 недели</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>18 страниц</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">SMM</span>
+                            <span class="project-tag">Контент</span>
+                            <span class="project-tag">Копирайтинг</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="project-nikita.html" class="btn btn-primary">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="dropdown">
+                                <button class="btn btn-outline dropdown-toggle">
+                                    <i class="fas fa-download"></i> Материалы
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="assets/documents/pdf/nikita-content-plan.pdf" class="dropdown-item" download>
+                                        <i class="far fa-file-pdf"></i> Контент-план (PDF)
+                                    </a>
+                                    <a href="assets/documents/word/nikita-posts.docx" class="dropdown-item" download>
+                                        <i class="far fa-file-word"></i> Примеры постов (DOCX)
+                                    </a>
+                                    <a href="assets/documents/excel/nikita-calendar.xlsx" class="dropdown-item" download>
+                                        <i class="far fa-file-excel"></i> Календарь публикаций (XLSX)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 3: РК1 и РК2 -->
+                <div class="project-card" 
+                     data-type="group" 
+                     data-author="both" 
+                     data-topic="strategy content analytics smm"
+                     data-date="2025-11-20"
+                     data-rating="94"
+                     data-name="PR кампания">
+                    <div class="project-card-header">
+                        <div class="project-badges">
+                            <span class="badge badge-group">Групповой</span>
+                            <span class="badge badge-strategy">Стратегия</span>
+                            <span class="badge badge-content">Контент</span>
+                        </div>
+                        <div class="project-rating">
+                            <i class="fas fa-star"></i>
+                            <span>94/100</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="PR кампания">
+                        <div class="project-overlay">
+                            <a href="project-rk1-rk2.html" class="view-project">
+                                <i class="fas fa-eye"></i>
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-author">
+                            <i class="fas fa-users"></i>
+                            <span>Батырхан & Никита</span>
+                        </div>
+                        <h3 class="project-title">PR-кампания для технологического стартапа</h3>
+                        <p class="project-description">Полноценная PR-кампания с медиа-планированием, контентом и оценкой эффективности для реального клиента.</p>
+                        
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="far fa-calendar"></i>
+                                <span>20.11.2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <span>4 недели</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>42 страницы</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">PR-стратегия</span>
+                            <span class="project-tag">Медиапланирование</span>
+                            <span class="project-tag">Креатив</span>
+                            <span class="project-tag">Оценка эффективности</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="project-rk1-rk2.html" class="btn btn-primary">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="dropdown">
+                                <button class="btn btn-outline dropdown-toggle">
+                                    <i class="fas fa-download"></i> Материалы
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="assets/documents/pdf/rk-pr-campaign.pdf" class="dropdown-item" download>
+                                        <i class="far fa-file-pdf"></i> Полный отчет (PDF)
+                                    </a>
+                                    <a href="assets/documents/word/rk-presentation.pptx" class="dropdown-item" download>
+                                        <i class="far fa-file-powerpoint"></i> Презентация (PPTX)
+                                    </a>
+                                    <a href="assets/documents/zip/rk-materials.zip" class="dropdown-item" download>
+                                        <i class="far fa-file-archive"></i> Все материалы (ZIP)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 4: Этот сайт -->
+                <div class="project-card" 
+                     data-type="exam" 
+                     data-author="both" 
+                     data-topic="strategy content analytics"
+                     data-date="2025-12-10"
+                     data-rating="96"
+                     data-name="Сайт портфолио">
+                    <div class="project-card-header">
+                        <div class="project-badges">
+                            <span class="badge badge-exam">Экзаменационный</span>
+                            <span class="badge badge-strategy">Стратегия</span>
+                            <span class="badge badge-content">Контент</span>
+                        </div>
+                        <div class="project-rating">
+                            <i class="fas fa-star"></i>
+                            <span>96/100</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Сайт портфолио">
+                        <div class="project-overlay">
+                            <a href="project-exam-site.html" class="view-project">
+                                <i class="fas fa-eye"></i>
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-author">
+                            <i class="fas fa-users"></i>
+                            <span>Батырхан & Никита</span>
+                        </div>
+                        <h3 class="project-title">Сайт-портфолио PR Профи</h3>
+                        <p class="project-description">Разработка интерактивного сайта-портфолио как экзаменационного проекта по курсу PR с демонстрацией всех навыков.</p>
+                        
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="far fa-calendar"></i>
+                                <span>10.12.2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <span>3 недели</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>10 страниц сайта</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Веб-разработка</span>
+                            <span class="project-tag">UI/UX дизайн</span>
+                            <span class="project-tag">Контент-стратегия</span>
+                            <span class="project-tag">Портфолио</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="project-exam-site.html" class="btn btn-primary">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="dropdown">
+                                <button class="btn btn-outline dropdown-toggle">
+                                    <i class="fas fa-download"></i> Материалы
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="assets/documents/pdf/site-documentation.pdf" class="dropdown-item" download>
+                                        <i class="far fa-file-pdf"></i> Документация (PDF)
+                                    </a>
+                                    <a href="assets/documents/word/site-presentation.pptx" class="dropdown-item" download>
+                                        <i class="far fa-file-powerpoint"></i> Презентация (PPTX)
+                                    </a>
+                                    <a href="https://github.com/pr-profi/pr-portfolio" class="dropdown-item" target="_blank">
+                                        <i class="fab fa-github"></i> Исходный код (GitHub)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Сообщение, если проекты не найдены -->
+            <div class="no-projects" id="noProjectsMessage" style="display: none;">
+                <div class="no-projects-content">
+                    <i class="fas fa-search"></i>
+                    <h3>Проекты не найдены</h3>
+                    <p>Попробуйте изменить параметры фильтрации или сбросить фильтры</p>
+                    <button class="btn btn-primary" id="resetFiltersBtn">
+                        <i class="fas fa-redo"></i> Сбросить фильтры
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика проектов -->
+    <section class="projects-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Статистика наших проектов</h2>
+                <p class="section-description">Общие показатели и результаты работы над проектами</p>
+            </div>
+            
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Завершенных проекта</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">94.25</div>
+                        <div class="stat-label">Средняя оценка</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Недель работы</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number">95</div>
+                        <div class="stat-label">Страниц материалов</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-details">
+                <div class="details-chart">
+                    <canvas id="projectsChart"></canvas>
+                </div>
+                
+                <div class="details-info">
+                    <h3>Распределение по типам проектов</h3>
+                    <div class="type-distribution">
+                        <div class="distribution-item">
+                            <div class="dist-color" style="background-color: #3498db;"></div>
+                            <div class="dist-info">
+                                <span class="dist-label">Индивидуальные</span>
+                                <span class="dist-value">50% (2 проекта)</span>
+                            </div>
+                        </div>
+                        <div class="distribution-item">
+                            <div class="dist-color" style="background-color: #9b59b6;"></div>
+                            <div class="dist-info">
+                                <span class="dist-label">Групповые</span>
+                                <span class="dist-value">25% (1 проект)</span>
+                            </div>
+                        </div>
+                        <div class="distribution-item">
+                            <div class="dist-color" style="background-color: #2ecc71;"></div>
+                            <div class="dist-info">
+                                <span class="dist-label">Экзаменационные</span>
+                                <span class="dist-value">25% (1 проект)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="topics-distribution">
+                        <h4>Темы проектов:</h4>
+                        <div class="topics-tags">
+                            <span class="topic-tag">Стратегия (3)</span>
+                            <span class="topic-tag">Контент (3)</span>
+                            <span class="topic-tag">Аналитика (2)</span>
+                            <span class="topic-tag">SMM (2)</span>
+                            <span class="topic-tag">Веб-разработка (1)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="projects-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Хотите узнать больше о наших проектах?</h2>
+                <p>Каждый проект содержит детальное описание, процесс работы, результаты и материалы для скачивания</p>
+                <div class="cta-buttons">
+                    <a href="#projectsGrid" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Смотреть все проекты
+                    </a>
+                    <a href="contacts.html" class="btn btn-outline btn-lg">
+                        <i class="fas fa-envelope"></i> Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bullhorn logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">PR Профи</span>
+                            <span class="logo-sub">Портфолио 2025</span>
+                        </div>
+                    </a>
+                    <p>Сайт-презентация нашего пути в изучении Public Relations. Создано с целью демонстрации приобретенных навыков и проектов.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>О нас</h3>
+                        <ul>
+                            <li><a href="team.html">Команда</a></li>
+                            <li><a href="course.html">Курс PR</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="achievements.html">Достижения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Проекты</h3>
+                        <ul>
+                            <li><a href="project-batyrkhan.html">Батырхана</a></li>
+                            <li><a href="project-nikita.html">Никиты</a></li>
+                            <li><a href="project-rk1-rk2.html">РК1 и РК2</a></li>
+                            <li><a href="project-exam-site.html">Этот сайт</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ресурсы</h3>
+                        <ul>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Презентации</a></li>
+                            <li><a href="#">Исходники</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PR Профи. Все права защищены. Сайт создан как экзаменационный проект.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects-filter.js"></script>
+    <script>
+        // Инициализация графика
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('projectsChart');
+            if (ctx) {
+                new Chart(ctx.getContext('2d'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Индивидуальные', 'Групповые', 'Экзаменационные'],
+                        datasets: [{
+                            data: [2, 1, 1],
+                            backgroundColor: [
+                                '#3498db',
+                                '#9b59b6',
+                                '#2ecc71'
+                            ],
+                            borderWidth: 2,
+                            borderColor: 'var(--bg-color)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    color: 'var(--text-color)',
+                                    padding: 20,
+                                    font: {
+                                        size: 14
+                                    }
+                                }
+                            }
+                        },
+                        cutout: '60%'
+                    }
+                });
+            }
+            
+            // Анимация статистики
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const text = stat.textContent;
+                if (text.includes('.')) {
+                    const target = parseFloat(text);
+                    let current = 0;
+                    const increment = target / 30;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            stat.textContent = target.toFixed(2);
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = current.toFixed(2);
+                        }
+                    }, 50);
+                } else {
+                    const target = parseInt(text);
+                    let current = 0;
+                    const increment = target / 30;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            stat.textContent = target;
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = Math.floor(current);
+                        }
+                    }, 50);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

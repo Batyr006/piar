@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Профи | Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Загрузка PR Профи...</p>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bullhorn logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-main">PR Профи</span>
+                    <span class="logo-sub">by Батырхан & Никита</span>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <button class="nav-toggle" id="navToggle">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i>Главная</a></li>
+                    <li><a href="team.html" class="nav-link"><i class="fas fa-users"></i>Команда</a></li>
+                    <li><a href="course.html" class="nav-link"><i class="fas fa-book-open"></i>Курс</a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-chart-line"></i>Навыки</a></li>
+                    <li><a href="achievements.html" class="nav-link"><i class="fas fa-trophy"></i>Достижения</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#" class="nav-link nav-projects"><i class="fas fa-rocket"></i>Проекты</a></li>
+                    <li><a href="#" class="nav-link nav-contacts"><i class="fas fa-envelope"></i>Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInUp">
+                <div class="hero-badge">Наш PR путь</div>
+                <h1 class="hero-title">
+                    Мы создаём 
+                    <span class="text-gradient">истории</span>
+                    <br>которые 
+                    <span class="typed-text" id="typedText"></span>
+                </h1>
+                <p class="hero-subtitle">
+                    Два студента, одна цель — освоить искусство PR и создать проекты, 
+                    которые меняют восприятие. Добро пожаловать на наш сайт!
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">Студента</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Страниц</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Проектов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-label">Часов</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="team.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-user-friends"></i>Познакомиться
+                    </a>
+                    <a href="#features" class="btn btn-outline btn-lg">
+                        <i class="fas fa-arrow-down"></i>Узнать больше
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=1080&q=80" 
+                         alt="Команда за работой" 
+                         class="hero-img">
+                    <div class="image-overlay"></div>
+                    <div class="floating-element element-1">
+                        <i class="fas fa-comment-alt"></i>
+                    </div>
+                    <div class="floating-element element-2">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="floating-element element-3">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#features" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Особенности -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Наш подход</span>
+                <h2 class="section-title">Почему наш проект особенный</h2>
+                <p class="section-description">Мы создали не просто сайт, а интерактивное портфолио нашего пути в PR</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Структурированно</h3>
+                    <p>10 страниц, каждая с уникальной информацией о нашем обучении и проектах</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Адаптивно</h3>
+                    <p>Идеальное отображение на всех устройствах — от смартфона до компьютера</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                    <h3>Практично</h3>
+                    <p>Скачивайте наши проекты в PDF, Word и других форматах</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Удобный поиск</h3>
+                    <p>Фильтрация проектов по типу, дате и теме для быстрого доступа</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Быстрый доступ -->
+    <section class="quick-access">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Начните знакомство</h2>
+                <p class="section-description">Выберите раздел, который вас интересует</p>
+            </div>
+            
+            <div class="access-grid">
+                <a href="team.html" class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Команда</h3>
+                    <p>Узнайте о нас подробнее: наши сильные стороны, роли и вклад в проекты</p>
+                    <span class="access-link">Подробнее <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="course.html" class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Курс PR</h3>
+                    <p>Что мы изучали, программа обучения и ключевые темы</p>
+                    <span class="access-link">Подробнее <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="skills.html" class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Наши навыки</h3>
+                    <p>Какие компетенции мы приобрели и как их применяем</p>
+                    <span class="access-link">Подробнее <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="achievements.html" class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Достижения</h3>
+                    <p>Наши успехи, сертификаты и планы на будущее</p>
+                    <span class="access-link">Подробнее <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Таймер до экзамена -->
+    <section class="countdown">
+        <div class="container">
+            <div class="countdown-content">
+                <h2>До защиты наших проектов</h2>
+                <div class="countdown-timer">
+                    <div class="time-unit">
+                        <span class="time-number" id="days">00</span>
+                        <span class="time-label">Дней</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">00</span>
+                        <span class="time-label">Часов</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">00</span>
+                        <span class="time-label">Минут</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">00</span>
+                        <span class="time-label">Секунд</span>
+                    </div>
+                </div>
+                <p class="countdown-note">Мы готовимся показать все, чему научились за время курса!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <div class="logo">
+                        <i class="fas fa-bullhorn logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">PR Профи</span>
+                            <span class="logo-sub">Портфолио 2025</span>
+                        </div>
+                    </div>
+                    <p>Сайт-презентация нашего пути в изучении Public Relations. Создано с целью демонстрации приобретенных навыков и проектов.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>О нас</h3>
+                        <ul>
+                            <li><a href="team.html">Команда</a></li>
+                            <li><a href="course.html">Курс PR</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="achievements.html">Достижения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Проекты</h3>
+                        <ul>
+                            <li><a href="#">Батырхана</a></li>
+                            <li><a href="#">Никиты</a></li>
+                            <li><a href="#">РК1 и РК2</a></li>
+                            <li><a href="#">Этот сайт</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ресурсы</h3>
+                        <ul>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Презентации</a></li>
+                            <li><a href="#">Исходники</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PR Профи. Все права защищены. Сайт создан как экзаменационный проект.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

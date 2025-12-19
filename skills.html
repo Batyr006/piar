@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Профи | Навыки</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Загрузка...</p>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-bullhorn logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-main">PR Профи</span>
+                    <span class="logo-sub">by Батырхан & Никита</span>
+                </div>
+            </a>
+            
+            <nav class="nav">
+                <button class="nav-toggle" id="navToggle">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Главная</a></li>
+                    <li><a href="team.html" class="nav-link"><i class="fas fa-users"></i>Команда</a></li>
+                    <li><a href="course.html" class="nav-link"><i class="fas fa-book-open"></i>Курс</a></li>
+                    <li><a href="skills.html" class="nav-link active"><i class="fas fa-chart-line"></i>Навыки</a></li>
+                    <li><a href="achievements.html" class="nav-link"><i class="fas fa-trophy"></i>Достижения</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="projects-main.html" class="nav-link nav-projects"><i class="fas fa-rocket"></i>Проекты</a></li>
+                    <li><a href="contacts.html" class="nav-link nav-contacts"><i class="fas fa-envelope"></i>Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h1 class="page-title">Приобретенные навыки</h1>
+            <p class="page-subtitle">Компетенции, которые мы освоили за время изучения курса Public Relations</p>
+        </div>
+    </section>
+
+    <!-- Категории навыков -->
+    <section class="skills-categories">
+        <div class="container">
+            <div class="categories-tabs">
+                <button class="category-btn active" data-category="strategy">
+                    <i class="fas fa-chess-board"></i>
+                    <span>Стратегические</span>
+                </button>
+                <button class="category-btn" data-category="communication">
+                    <i class="fas fa-comments"></i>
+                    <span>Коммуникационные</span>
+                </button>
+                <button class="category-btn" data-category="content">
+                    <i class="fas fa-edit"></i>
+                    <span>Контентные</span>
+                </button>
+                <button class="category-btn" data-category="analytical">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Аналитические</span>
+                </button>
+                <button class="category-btn" data-category="technical">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Технические</span>
+                </button>
+            </div>
+            
+            <div class="categories-content">
+                <!-- Стратегические навыки -->
+                <div class="category-pane active" id="strategy">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Разработка PR-стратегий</h3>
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <p>Умение создавать комплексные PR-стратегии, учитывая цели бизнеса, целевую аудиторию и рыночные условия.</p>
+                            <div class="skill-tags">
+                                <span class="tag">SWOT-анализ</span>
+                                <span class="tag">Постановка целей</span>
+                                <span class="tag">Планирование</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Бренд-менеджмент</h3>
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                            <p>Управление репутацией бренда, формирование его идентичности и позиционирования на рынке.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Позиционирование</span>
+                                <span class="tag">Репутация</span>
+                                <span class="tag">Идентичность</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Кризисный менеджмент</h3>
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                            <p>Разработка планов действий в кризисных ситуациях и управление коммуникациями для минимизации репутационных рисков.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Кризисные планы</span>
+                                <span class="tag">Работа с негативом</span>
+                                <span class="tag">Восстановление</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Коммуникационные навыки -->
+                <div class="category-pane" id="communication">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Работа со СМИ</h3>
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <p>Построение конструктивного диалога с журналистами, подготовка и рассылка пресс-релизов, организация пресс-конференций.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Медиа-рилейшнз</span>
+                                <span class="tag">Пресс-релизы</span>
+                                <span class="tag">Интервью</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Внутренние коммуникации</h3>
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                            <p>Организация эффективных коммуникаций внутри компании для повышения вовлеченности сотрудников.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Корпоративная культура</span>
+                                <span class="tag">Мотивация</span>
+                                <span class="tag">Информирование</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Публичные выступления</h3>
+                                <div class="skill-level" data-level="65"></div>
+                            </div>
+                            <p>Подготовка и проведение презентаций, выступлений на мероприятиях и работа с аудиторией.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Презентации</span>
+                                <span class="tag">Ораторское искусство</span>
+                                <span class="tag">Ведение мероприятий</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Контентные навыки -->
+                <div class="category-pane" id="content">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Копирайтинг</h3>
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                            <p>Создание продающих, информационных и имиджевых текстов для разных каналов коммуникации.</p>
+                            <div class="skill-tags">
+                                <span class="tag">SEO-тексты</span>
+                                <span class="tag">Пресс-релизы</span>
+                                <span class="tag">SMM-контент</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>SMM и контент-маркетинг</h3>
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <p>Создание и продвижение контента в социальных сетях, работа с инфлюенсерами, ведение сообществ.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Соцсети</span>
+                                <span class="tag">Контент-план</span>
+                                <span class="tag">Инфлюенсеры</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Производство медиа-контента</h3>
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                            <p>Создание фото, видео и графического контента для PR-кампаний и digital-каналов.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Фотография</span>
+                                <span class="tag">Видеомонтаж</span>
+                                <span class="tag">Графический дизайн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Аналитические навыки -->
+                <div class="category-pane" id="analytical">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Анализ рынка и аудитории</h3>
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <p>Проведение маркетинговых исследований, анализ конкурентов и изучение поведения целевой аудитории.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Исследования</span>
+                                <span class="tag">Анализ конкурентов</span>
+                                <span class="tag">Целевая аудитория</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Оценка эффективности PR</h3>
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                            <p>Разработка KPI, измерение ROI PR-кампаний и подготовка отчетов о результатах.</p>
+                            <div class="skill-tags">
+                                <span class="tag">KPI</span>
+                                <span class="tag">ROI</span>
+                                <span class="tag">Аналитика</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Работа с данными</h3>
+                                <div class="skill-level" data-level="65"></div>
+                            </div>
+                            <p>Сбор, обработка и визуализация данных для принятия обоснованных PR-решений.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Анализ данных</span>
+                                <span class="tag">Визуализация</span>
+                                <span class="tag">Отчетность</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Технические навыки -->
+                <div class="category-pane" id="technical">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Веб-разработка</h3>
+                                <div class="skill-level" data-level="60"></div>
+                            </div>
+                            <p>Создание сайтов и лендингов для PR-кампаний с использованием HTML, CSS и JavaScript.</p>
+                            <div class="skill-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Адаптивный дизайн</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Работа с PR-инструментами</h3>
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                            <p>Использование специализированных программ для мониторинга СМИ, анализа и планирования.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Медиа-мониторинг</span>
+                                <span class="tag">Планирование</span>
+                                <span class="tag">Анализ</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Графические редакторы</h3>
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                            <p>Создание визуального контента с помощью Figma, Canva, Adobe Photoshop и других инструментов.</p>
+                            <div class="skill-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Canva</span>
+                                <span class="tag">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сравнение навыков -->
+    <section class="skills-comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Распределение компетенций</h2>
+                <p class="section-description">Как распределяются компетенции между участниками команды</p>
+            </div>
+            
+            <div class="comparison-chart">
+                <div class="chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+                
+                <div class="comparison-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #3498db;"></div>
+                        <div class="legend-text">
+                            <span class="legend-name">Батырхан</span>
+                            <span class="legend-desc">Стратегическое мышление и аналитика</span>
+                        </div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #9b59b6;"></div>
+                        <div class="legend-text">
+                            <span class="legend-name">Никита</span>
+                            <span class="legend-desc">Контент и коммуникации</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Уровень владения -->
+    <section class="skill-mastery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Уровень владения навыками</h2>
+                <p class="section-description">Оценка собственных компетенций по 10-балльной шкале</p>
+            </div>
+            
+            <div class="mastery-grid">
+                <div class="mastery-category">
+                    <h3><i class="fas fa-chess-board"></i> Стратегия и планирование</h3>
+                    <div class="mastery-item">
+                        <span class="skill-name">Разработка PR-стратегий</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="8.5"></div>
+                        </div>
+                        <span class="skill-level">8.5/10</span>
+                    </div>
+                    <div class="mastery-item">
+                        <span class="skill-name">Бюджетирование проектов</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="7.0"></div>
+                        </div>
+                        <span class="skill-level">7.0/10</span>
+                    </div>
+                    <div class="mastery-item">
+                        <span class="skill-name">Кризисное планирование</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="7.5"></div>
+                        </div>
+                        <span class="skill-level">7.5/10</span>
+                    </div>
+                </div>
+                
+                <div class="mastery-category">
+                    <h3><i class="fas fa-comments"></i> Коммуникации</h3>
+                    <div class="mastery-item">
+                        <span class="skill-name">Работа со СМИ</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="8.0"></div>
+                        </div>
+                        <span class="skill-level">8.0/10</span>
+                    </div>
+                    <div class="mastery-item">
+                        <span class="skill-name">Публичные выступления</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="6.5"></div>
+                        </div>
+                        <span class="skill-level">6.5/10</span>
+                    </div>
+                    <div class="mastery-item">
+                        <span class="skill-name">Ведение переговоров</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="7.0"></div>
+                        </div>
+                        <span class="skill-level">7.0/10</span>
+                    </div>
+                </div>
+                
+                <div class="mastery-category">
+                    <h3><i class="fas fa-edit"></i> Контент</h3>
+                    <div class="mastery-item">
+                        <span class="skill-name">Копирайтинг</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="9.0"></div>
+                        </div>
+                        <span class="skill-level">9.0/10</span>
+                    </div>
+                    <div class="mastery-item">
+                        <span class="skill-name">SMM и соцсети</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="8.5"></div>
+                        </div>
+                        <span class="skill-level">8.5/10</span>
+                    </div>
+                    <div class="mastery-item">
+                        <span class="skill-name">Производство медиа</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="7.0"></div>
+                        </div>
+                        <span class="skill-level">7.0/10</span>
+                    </div>
+                </div>
+                
+                <div class="mastery-category">
+                    <h3><i class="fas fa-chart-bar"></i> Аналитика</h3>
+                    <div class="mastery-item">
+                        <span class="skill-name">Анализ данных</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="8.0"></div>
+                        </div>
+                        <span class="skill-level">8.0/10</span>
+                    </div>
+                    <div class="mastery-item">
+                        <span class="skill-name">Оценка эффективности</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="7.5"></div>
+                        </div>
+                        <span class="skill-level">7.5/10</span>
+                    </div>
+                    <div class="mastery-item">
+                        <span class="skill-name">Исследования рынка</span>
+                        <div class="mastery-bar">
+                            <div class="mastery-fill" data-level="8.0"></div>
+                        </div>
+                        <span class="skill-level">8.0/10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сертификаты -->
+    <section class="skills-certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Подтверждение навыков</h2>
+                <p class="section-description">Сертификаты и документы, подтверждающие наши компетенции</p>
+            </div>
+            
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Основы PR</h3>
+                    <p>Сертификат об успешном завершении курса "Основы Public Relations"</p>
+                    <a href="#" class="certificate-link">
+                        <i class="fas fa-download"></i>
+                        <span>Скачать PDF</span>
+                    </a>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>SMM специалист</h3>
+                    <p>Сертификат по курсу "Социальные медиа и контент-маркетинг"</p>
+                    <a href="#" class="certificate-link">
+                        <i class="fas fa-download"></i>
+                        <span>Скачать PDF</span>
+                    </a>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Копирайтинг</h3>
+                    <p>Сертификат о прохождении курса "Профессиональный копирайтинг"</p>
+                    <a href="#" class="certificate-link">
+                        <i class="fas fa-download"></i>
+                        <span>Скачать PDF</span>
+                    </a>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Веб-разработка</h3>
+                    <p>Сертификат по созданию сайтов (HTML, CSS, JavaScript)</p>
+                    <a href="#" class="certificate-link">
+                        <i class="fas fa-download"></i>
+                        <span>Скачать PDF</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Стили для этой страницы -->
+    <style>
+        .skills-categories {
+            padding: 60px 0;
+        }
+        
+        .categories-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .category-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 25px;
+            background-color: var(--bg-light);
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .category-btn i {
+            font-size: 1.2rem;
+        }
+        
+        .category-btn.active {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            box-shadow: var(--shadow);
+        }
+        
+        .category-btn:hover:not(.active) {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .category-pane {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .category-pane.active {
+            display: block;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-item {
+            background-color: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-header h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            color: var(--text-color);
+        }
+        
+        .skill-level {
+            width: 50px;
+            background-color: var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .skill-level::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 4px;
+            width: 0;
+            transition: width 1.5s ease;
+        }
+        
+        .skill-level[data-level="85"]::after { width: 85%; }
+        .skill-level[data-level="75"]::after { width: 75%; }
+        .skill-level[data-level="70"]::after { width: 70%; }
+        .skill-level[data-level="80"]::after { width: 80%; }
+        .skill-level[data-level="65"]::after { width: 65%; }
+        .skill-level[data-level="90"]::after { width: 90%; }
+        .skill-level[data-level="60"]::after { width: 60%; }
+        
+        .skill-item p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tags .tag {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        /* Сравнение навыков */
+        .skills-comparison {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+        
+        .comparison-chart {
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--shadow);
+        }
+        
+        .chart-container {
+            height: 400px;
+            margin-bottom: 40px;
+        }
+        
+        .comparison-legend {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .legend-color {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        
+        .legend-name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .legend-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        /* Уровень владения */
+        .skill-mastery {
+            padding: 80px 0;
+        }
+        
+        .mastery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .mastery-category {
+            background-color: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .mastery-category h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .mastery-category h3 i {
+            color: var(--primary-color);
+        }
+        
+        .mastery-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .skill-name {
+            flex: 1;
+            min-width: 200px;
+            color: var(--text-color);
+        }
+        
+        .mastery-bar {
+            flex: 2;
+            height: 10px;
+            background-color: var(--border-color);
+            border-radius: 5px;
+            overflow: hidden;
+            min-width: 150px;
+        }
+        
+        .mastery-fill {
+            height: 100%;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 5px;
+            width: 0;
+            transition: width 1.5s ease;
+        }
+        
+        .mastery-fill[data-level="8.5"] { width: 85%; }
+        .mastery-fill[data-level="7.0"] { width: 70%; }
+        .mastery-fill[data-level="7.5"] { width: 75%; }
+        .mastery-fill[data-level="8.0"] { width: 80%; }
+        .mastery-fill[data-level="6.5"] { width: 65%; }
+        .mastery-fill[data-level="9.0"] { width: 90%; }
+        
+        .skill-level {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--primary-color);
+            min-width: 60px;
+        }
+        
+        /* Сертификаты */
+        .skills-certificates {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+        
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .certificate-card {
+            background-color: var(--bg-color);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .certificate-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .certificate-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .certificate-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        
+        .certificate-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .certificate-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: rgba(52, 152, 219, 0.1);
+            border-radius: 30px;
+            transition: var(--transition);
+        }
+        
+        .certificate-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .categories-tabs {
+                flex-direction: column;
+            }
+            
+            .category-btn {
+                justify-content: center;
+            }
+            
+            .mastery-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .mastery-bar {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bullhorn logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">PR Профи</span>
+                            <span class="logo-sub">Портфолио 2023</span>
+                        </div>
+                    </a>
+                    <p>Сайт-презентация нашего пути в изучении Public Relations. Создано с целью демонстрации приобретенных навыков и проектов.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>О нас</h3>
+                        <ul>
+                            <li><a href="team.html">Команда</a></li>
+                            <li><a href="course.html">Курс PR</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="achievements.html">Достижения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Проекты</h3>
+                        <ul>
+                            <li><a href="project-batyrkhan.html">Батырхана</a></li>
+                            <li><a href="project-nikita.html">Никиты</a></li>
+                            <li><a href="project-rk1-rk2.html">РК1 и РК2</a></li>
+                            <li><a href="project-exam-site.html">Этот сайт</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ресурсы</h3>
+                        <ul>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Презентации</a></li>
+                            <li><a href="#">Исходники</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 PR Профи. Все права защищены. Сайт создан как экзаменационный проект.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Табы категорий
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const categoryPanes = document.querySelectorAll('.category-pane');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const categoryId = this.getAttribute('data-category');
+                    
+                    // Убираем активный класс у всех кнопок
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    // Скрываем все панели
+                    categoryPanes.forEach(pane => pane.classList.remove('active'));
+                    // Показываем выбранную панель
+                    document.getElementById(categoryId).classList.add('active');
+                });
+            });
+            
+            // Анимация прогресс-баров
+            const skillLevels = document.querySelectorAll('.skill-level::after');
+            const masteryFills = document.querySelectorAll('.mastery-fill');
+            
+            const animateOnScroll = () => {
+                skillLevels.forEach(level => {
+                    const rect = level.parentElement.getBoundingClientRect();
+                    if (rect.top < window.innerHeight * 0.8) {
+                        // Анимация уже запущена через CSS
+                    }
+                });
+                
+                masteryFills.forEach(fill => {
+                    const rect = fill.getBoundingClientRect();
+                    if (rect.top < window.innerHeight * 0.8) {
+                        const level = fill.getAttribute('data-level');
+                        fill.style.width = level + '%';
+                    }
+                });
+            };
+            
+            window.addEventListener('load', animateOnScroll);
+            window.addEventListener('scroll', animateOnScroll);
+            
+            // График сравнения навыков
+            const ctx = document.getElementById('skillsChart');
+            if (ctx) {
+                new Chart(ctx.getContext('2d'), {
+                    type: 'radar',
+                    data: {
+                        labels: ['Стратегия', 'Коммуникации', 'Контент', 'Аналитика', 'Технические', 'Презентации'],
+                        datasets: [{
+                            label: 'Батырхан',
+                            data: [8.5, 7.5, 6.5, 8.0, 6.0, 7.0],
+                            backgroundColor: 'rgba(52, 152, 219, 0.2)',
+                            borderColor: '#3498db',
+                            borderWidth: 2,
+                            pointBackgroundColor: '#3498db'
+                        }, {
+                            label: 'Никита',
+                            data: [7.0, 8.0, 9.0, 7.5, 7.5, 8.5],
+                            backgroundColor: 'rgba(155, 89, 182, 0.2)',
+                            borderColor: '#9b59b6',
+                            borderWidth: 2,
+                            pointBackgroundColor: '#9b59b6'
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            r: {
+                                angleLines: {
+                                    display: true
+                                },
+                                suggestedMin: 0,
+                                suggestedMax: 10
+                            }
+                        },
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

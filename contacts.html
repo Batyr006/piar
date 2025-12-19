@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Профи | Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Загрузка...</p>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-bullhorn logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-main">PR Профи</span>
+                    <span class="logo-sub">by Батырхан & Никита</span>
+                </div>
+            </a>
+            
+            <nav class="nav">
+                <button class="nav-toggle" id="navToggle">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Главная</a></li>
+                    <li><a href="team.html" class="nav-link"><i class="fas fa-users"></i>Команда</a></li>
+                    <li><a href="course.html" class="nav-link"><i class="fas fa-book-open"></i>Курс</a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-chart-line"></i>Навыки</a></li>
+                    <li><a href="achievements.html" class="nav-link"><i class="fas fa-trophy"></i>Достижения</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="projects-main.html" class="nav-link nav-projects"><i class="fas fa-rocket"></i>Проекты</a></li>
+                    <li><a href="contacts.html" class="nav-link active nav-contacts"><i class="fas fa-envelope"></i>Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h1 class="page-title">Свяжитесь с нами</h1>
+            <p class="page-subtitle">Есть вопросы о наших проектах или хотите обсудить сотрудничество? Мы всегда на связи!</p>
+        </div>
+    </section>
+
+    <!-- Контактная информация -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Контакты команды -->
+                <div class="contact-section">
+                    <h2><i class="fas fa-users"></i> Контакты команды</h2>
+                    <div class="team-contacts">
+                        <div class="team-contact-card">
+                            <div class="contact-avatar">
+                                <img src="assets/images/team/batyr.jpg" 
+                                     alt="Батырхан">
+                            </div>
+                            <div class="contact-details">
+                                <h3>Адил Батырхан</h3>
+                                <div class="contact-role">PR Стратег</div>
+                                <div class="contact-items">
+                                    <a href="mailto:batyr@pr-profi.ru" class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>batyrkhan.a.o@gmail.com</span>
+                                    </a>
+                                    <a href="https://t.me/batyr_pr" class="contact-item" target="_blank">
+                                        <i class="fab fa-telegram"></i>
+                                        <span>@batyr</span>
+                                    </a>
+                                    <a href="tel:+77771234567" class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <span>+7 (778) 965 8977</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-contact-card">
+                            <div class="contact-avatar">
+                                <img src="assets/images/team/nikita.jpg" 
+                                     alt="Никита">
+                            </div>
+                            <div class="contact-details">
+                                <h3>Никита Москаленко</h3>
+                                <div class="contact-role">Контент-специалист</div>
+                                <div class="contact-items">
+                                    <a href="mailto:nikita@pr-profi.ru" class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>nickmo1805@gmail.com</span>
+                                    </a>
+                                    <a href="https://vk.com/nikita_content" class="contact-item" target="_blank">
+                                        <i class="fab fa-vk"></i>
+                                        <span>nikita</span>
+                                    </a>
+                                    <a href="tel:+77777654321" class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <span>+7 (708) 401 8053</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Форма обратной связи -->
+                <div class="contact-section">
+                    <h2><i class="fas fa-paper-plane"></i> Форма обратной связи</h2>
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Тема сообщения</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Выберите тему</option>
+                                    <option value="projects">Вопросы о проектах</option>
+                                    <option value="cooperation">Сотрудничество</option>
+                                    <option value="feedback">Обратная связь</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Расскажите, что вас интересует..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">Я согласен на обработку персональных данных</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-paper-plane"></i> Отправить сообщение
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Часто задаваемые вопросы -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <p class="section-description">Ответы на наиболее популярные вопросы о наших проектах и сотрудничестве</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли использовать ваши проекты в учебных целях?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, все наши проекты доступны для свободного использования в учебных и некоммерческих целях. Мы будем рады, если наш опыт поможет другим студентам в изучении PR.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Предоставляете ли вы консультации по PR?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Мы открыты для консультаций по вопросам PR, особенно для студентов и начинающих специалистов. Вы можете связаться с нами через форму обратной связи, и мы обсудим детали.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли скачать исходные файлы проектов?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, на страницах проектов доступны все исходные материалы: отчеты в PDF, презентации, данные исследований. Для этого сайта также доступен исходный код на GitHub.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Планируете ли вы дальнейшее сотрудничество?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Мы открыты для новых проектов и сотрудничества. Если у вас есть интересные предложения или вы хотите поработать с нами, свяжитесь с нами через контактную форму.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Социальные сети -->
+    <section class="contact-social">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Мы в социальных сетях</h2>
+                <p class="section-description">Следите за нашими новостями и проектами в социальных сетях</p>
+            </div>
+            
+            <div class="social-grid">
+                <a href="https://vk.com/pr_profi" class="social-card" target="_blank">
+                    <div class="social-icon">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <div class="social-info">
+                        <h3>ВКонтакте</h3>
+                        <p>Анонсы проектов и полезные материалы по PR</p>
+                    </div>
+                </a>
+                
+                <a href="https://t.me/pr_profi" class="social-card" target="_blank">
+                    <div class="social-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="social-info">
+                        <h3>Telegram</h3>
+                        <p>Новости и эксклюзивные материалы</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/pr-profi" class="social-card" target="_blank">
+                    <div class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="social-info">
+                        <h3>GitHub</h3>
+                        <p>Исходный код наших проектов</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.youtube.com/@pr_profi" class="social-card" target="_blank">
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="social-info">
+                        <h3>YouTube</h3>
+                        <p>Видеопрезентации и обзоры проектов</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="contact-map">
+        <div class="container">
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Наше местоположение</h3>
+                    <p>Мы находимся в городе Алматы, Казахстан</p>
+                    <div class="map-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Алматы, ул. Примерная, 123</span>
+                    </div>
+                </div>
+                <!-- Для реальной карты можно использовать:
+                <iframe src="https://www.google.com/maps/embed?pb=..." frameborder="0" style="border:0;" allowfullscreen></iframe>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Время ответа -->
+    <section class="contact-response">
+        <div class="container">
+            <div class="response-info">
+                <div class="response-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="response-content">
+                    <h3>Время ответа</h3>
+                    <p>Мы стараемся отвечать на все сообщения в течение 24 часов. По рабочим дням ответ обычно приходит в течение нескольких часов.</p>
+                    <div class="response-schedule">
+                        <div class="schedule-item">
+                            <div class="schedule-days">Пн-Пт</div>
+                            <div class="schedule-time">9:00 - 18:00</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-days">Сб</div>
+                            <div class="schedule-time">10:00 - 16:00</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-days">Вс</div>
+                            <div class="schedule-time">Выходной</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bullhorn logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">PR Профи</span>
+                            <span class="logo-sub">Портфолио 2025</span>
+                        </div>
+                    </a>
+                    <p>Сайт-презентация нашего пути в изучении Public Relations. Создано с целью демонстрации приобретенных навыков и проектов.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>О нас</h3>
+                        <ul>
+                            <li><a href="team.html">Команда</a></li>
+                            <li><a href="course.html">Курс PR</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="achievements.html">Достижения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Проекты</h3>
+                        <ul>
+                            <li><a href="project-batyrkhan.html">Батырхана</a></li>
+                            <li><a href="project-nikita.html">Никиты</a></li>
+                            <li><a href="project-rk1-rk2.html">РК1 и РК2</a></li>
+                            <li><a href="project-exam-site.html">Этот сайт</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ресурсы</h3>
+                        <ul>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Презентации</a></li>
+                            <li><a href="#">Исходники</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PR Профи. Все права защищены. Сайт создан как экзаменационный проект.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+    <script>
+        // Обработка формы
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Сбор данных формы
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // В реальном проекте здесь был бы AJAX запрос к серверу
+            // Для демонстрации просто показываем сообщение об успехе
+            
+            // Показываем сообщение об успехе
+            alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+            
+            // Очищаем форму
+            this.reset();
+        });
+        
+        // Аккордеон FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.parentElement;
+                const answer = this.nextElementSibling;
+                
+                // Закрываем все открытые вопросы
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                        otherItem.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Открываем/закрываем текущий вопрос
+                item.classList.toggle('active');
+                
+                if (item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    this.querySelector('i').style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = null;
+                    this.querySelector('i').style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+    
+    <style>
+        /* Стили для страницы контактов */
+        .contact-info {
+            padding: 80px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .contact-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .team-contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .team-contact-card {
+            display: flex;
+            gap: 25px;
+            padding: 30px;
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .team-contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .contact-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--primary-color);
+            flex-shrink: 0;
+        }
+        
+        .contact-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .contact-details {
+            flex: 1;
+        }
+        
+        .contact-details h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--text-color);
+        }
+        
+        .contact-role {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .contact-item:hover {
+            color: var(--primary-color);
+            transform: translateX(5px);
+        }
+        
+        .contact-item i {
+            width: 20px;
+            color: var(--primary-color);
+        }
+        
+        /* Форма обратной связи */
+        .contact-form-container {
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .checkbox-group input {
+            width: auto;
+        }
+        
+        .checkbox-group label {
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        
+        .btn-block {
+            width: 100%;
+            justify-content: center;
+        }
+        
+        /* FAQ */
+        .contact-faq {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+        
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: 25px 30px;
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            cursor: pointer;
+            text-align: left;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background-color: var(--bg-light);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 30px 25px;
+            max-height: 500px;
+        }
+        
+        .faq-answer p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        /* Социальные сети */
+        .contact-social {
+            padding: 80px 0;
+        }
+        
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .social-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px;
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            color: var(--text-color);
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+        
+        .social-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .social-card:hover .social-icon {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .social-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+        
+        .social-info h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .social-info p {
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+        
+        /* Карта */
+        .contact-map {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+        
+        .map-container {
+            height: 400px;
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .map-placeholder {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .map-placeholder i {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+        
+        .map-placeholder h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        
+        .map-placeholder p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        .map-address {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Время ответа */
+        .contact-response {
+            padding: 80px 0;
+        }
+        
+        .response-info {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 50px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .response-icon {
+            font-size: 3rem;
+            opacity: 0.8;
+        }
+        
+        .response-content {
+            flex: 1;
+        }
+        
+        .response-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .response-content p {
+            margin-bottom: 25px;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .response-schedule {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .schedule-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .schedule-days {
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .schedule-time {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .response-info {
+                flex-direction: column;
+                text-align: center;
+                gap: 25px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .team-contact-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-avatar {
+                margin: 0 auto;
+            }
+            
+            .response-schedule {
+                justify-content: center;
+            }
+            
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

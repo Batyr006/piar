@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Профи | Команда</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Загрузка...</p>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-bullhorn logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-main">PR Профи</span>
+                    <span class="logo-sub">by Батырхан & Никита</span>
+                </div>
+            </a>
+            
+            <nav class="nav">
+                <button class="nav-toggle" id="navToggle">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Главная</a></li>
+                    <li><a href="team.html" class="nav-link active"><i class="fas fa-users"></i>Команда</a></li>
+                    <li><a href="course.html" class="nav-link"><i class="fas fa-book-open"></i>Курс</a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-chart-line"></i>Навыки</a></li>
+                    <li><a href="achievements.html" class="nav-link"><i class="fas fa-trophy"></i>Достижения</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="projects-main.html" class="nav-link nav-projects"><i class="fas fa-rocket"></i>Проекты</a></li>
+                    <li><a href="contacts.html" class="nav-link nav-contacts"><i class="fas fa-envelope"></i>Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h1 class="page-title">Наша команда</h1>
+            <p class="page-subtitle">Познакомьтесь с создателями этого проекта — двумя целеустремленными студентами ALMAU</p>
+        </div>
+    </section>
+
+    <!-- Табы с участниками -->
+    <section class="team-tabs">
+        <div class="container">
+            <div class="tabs-header">
+                <div class="tabs-nav">
+                    <button class="tab-btn" data-tab="batyrkhan">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Батырхан</span>
+                    </button>
+                    <button class="tab-btn" data-tab="nikita">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Никита</span>
+                    </button>
+                    <button class="tab-btn" data-tab="teamwork">
+                        <i class="fas fa-handshake"></i>
+                        <span>Совместная работа</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="tabs-content">
+                <!-- Таб Батырхана -->
+                <div class="tab-pane active" id="batyrkhan">
+                    <div class="team-member-profile">
+                        <div class="profile-header">
+                            <div class="profile-image">
+                                <img src="assets/images/team/batyr.jpg" 
+                                     alt="Батырхан">
+                                <div class="profile-badge">
+                                    <i class="fas fa-star"></i>
+                                    <span>PR Стратег</span>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h2>Адил Батырхан</h2>
+                                <div class="profile-role">
+                                    <i class="fas fa-bullseye"></i>
+                                    <span>Стратегическое планирование и анализ</span>
+                                </div>
+                                <p class="profile-quote">
+                                    "PR — это не просто коммуникация, это искусство создания истории, 
+                                    которой хочется делиться с общественностью снова и снова"
+                                </p>
+                                <div class="profile-contacts">
+                                    <a href="#" class="contact-link">
+                                        <i class="fab fa-telegram"></i>
+                                        <span>@batyr</span>
+                                    </a>
+                                    <a href="#" class="contact-link">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>batyrkhan.a.o@gmail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-details">
+                            <div class="detail-section">
+                                <h3><i class="fas fa-graduation-cap"></i> Образование</h3>
+                                <p>Студент 3 курса факультета маркетинга и PR. Специализация — стратегический PR и брендинг.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3><i class="fas fa-tasks"></i> Обязанности в проекте</h3>
+                                <ul class="feature-list">
+                                    <li>Разработка PR-стратегий для проектов</li>
+                                    <li>Анализ целевой аудитории</li>
+                                    <li>Планирование коммуникационных кампаний</li>
+                                    <li>Создание контент-планов</li>
+                                    <li>Оценка эффективности PR-мероприятий</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3><i class="fas fa-lightbulb"></i> Сильные стороны</h3>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Аналитическое мышление</span>
+                                    <span class="skill-tag">Стратегическое планирование</span>
+                                    <span class="skill-tag">Презентационные навыки</span>
+                                    <span class="skill-tag">Работа с данными</span>
+                                    <span class="skill-tag">Креативность</span>
+                                    <span class="skill-tag">Лидерство</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3><i class="fas fa-project-diagram"></i> Вклад в проект</h3>
+                                <div class="contribution-stats">
+                                    <div class="contribution-stat">
+                                        <div class="stat-value">80%</div>
+                                        <div class="stat-label">Стратегия проектов</div>
+                                    </div>
+                                    <div class="contribution-stat">
+                                        <div class="stat-value">70%</div>
+                                        <div class="stat-label">Аналитика</div>
+                                    </div>
+                                    <div class="contribution-stat">
+                                        <div class="stat-value">60%</div>
+                                        <div class="stat-label">Презентации</div>
+                                    </div>
+                                    <div class="contribution-stat">
+                                        <div class="stat-value">90%</div>
+                                        <div class="stat-label">Планирование</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Таб Никиты -->
+                <div class="tab-pane" id="nikita">
+                    <div class="team-member-profile">
+                        <div class="profile-header">
+                            <div class="profile-image">
+                                <img src="assets/images/team/nikita.jpg"
+                                     alt="Никита">
+                                <div class="profile-badge">
+                                    <i class="fas fa-pen-fancy"></i>
+                                    <span>Контент-специалист</span>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h2>Никита Москаленко</h2>
+                                <div class="profile-role">
+                                    <i class="fas fa-keyboard"></i>
+                                    <span>Контент-маркетинг и SMM</span>
+                                </div>
+                                <p class="profile-quote">
+                                    "Хороший контент — это мост между брендом и аудиторией. 
+                                    Я строю эти мосты словами и образами"
+                                </p>
+                                <div class="profile-contacts">
+                                    <a href="#" class="contact-link">
+                                        <i class="fab fa-vk"></i>
+                                        <span>nikita_content</span>
+                                    </a>
+                                    <a href="#" class="contact-link">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>nickmo1805@gmail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-details">
+                            <div class="detail-section">
+                                <h3><i class="fas fa-graduation-cap"></i> Образование</h3>
+                                <p>Студент 3 курса факультета журналистики и медиакоммуникаций. Специализация — цифровой контент и SMM.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3><i class="fas fa-tasks"></i> Обязанности в проекте</h3>
+                                <ul class="feature-list">
+                                    <li>Создание текстового и визуального контента</li>
+                                    <li>Ведение социальных сетей</li>
+                                    <li>Копирайтинг и редактирование</li>
+                                    <li>Производство медиа-материалов</li>
+                                    <li>Работа с блогерами и инфлюенсерами</li>
+                                    <li>SEO-оптимизация контента</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3><i class="fas fa-lightbulb"></i> Сильные стороны</h3>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Копирайтинг</span>
+                                    <span class="skill-tag">SMM</span>
+                                    <span class="skill-tag">Графический дизайн</span>
+                                    <span class="skill-tag">Видеомонтаж</span>
+                                    <span class="skill-tag">Коммуникабельность</span>
+                                    <span class="skill-tag">Тайм-менеджмент</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3><i class="fas fa-project-diagram"></i> Вклад в проект</h3>
+                                <div class="contribution-stats">
+                                    <div class="contribution-stat">
+                                        <div class="stat-value">85%</div>
+                                        <div class="stat-label">Контент проектов</div>
+                                    </div>
+                                    <div class="contribution-stat">
+                                        <div class="stat-value">95%</div>
+                                        <div class="stat-label">SMM и соцсети</div>
+                                    </div>
+                                    <div class="contribution-stat">
+                                        <div class="stat-value">75%</div>
+                                        <div class="stat-label">Дизайн материалов</div>
+                                    </div>
+                                    <div class="contribution-stat">
+                                        <div class="stat-value">80%</div>
+                                        <div class="stat-label">Медиа-продакшн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Таб совместной работы -->
+                <div class="tab-pane" id="teamwork">
+                    <div class="teamwork-content">
+                        <div class="teamwork-header">
+                            <h2><i class="fas fa-handshake"></i> Наше сотрудничество</h2>
+                            <p class="teamwork-subtitle">Как два разных специалиста создают синергию в проектах</p>
+                        </div>
+                        
+                        <div class="teamwork-stats">
+                            <div class="teamwork-stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number">4</div>
+                                    <div class="stat-label">Месяца совместной работы</div>
+                                </div>
+                            </div>
+                            <div class="teamwork-stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number">10</div>
+                                    <div class="stat-label">Завершенных проекта</div>
+                                </div>
+                            </div>
+                            <div class="teamwork-stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Совместных обсуждений</div>
+                                </div>
+                            </div>
+                            <div class="teamwork-stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number">2</div>
+                                    <div class="stat-label">Лучших проекта курса</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="teamwork-process">
+                            <h3><i class="fas fa-sync-alt"></i> Наш рабочий процесс</h3>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Совместное планирование</h4>
+                                        <p>Батырхан анализирует аудиторию, Никита изучает тренды контента</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Разработка стратегии</h4>
+                                        <p>Создание единого плана, где стратегия встречается с контентом</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Реализация</h4>
+                                        <p>Параллельная работа: стратегия → контент → публикация</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Анализ и оптимизация</h4>
+                                        <p>Совместный разбор результатов и улучшение подходов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="teamwork-quote">
+                            <div class="quote-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>Мы доказали, что стратег и контент-специалист могут создавать проекты, 
+                                которые превосходят ожидания. Наша синергия — это сочетание аналитики и креатива.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="quote-author">— Батырхан & Никита</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Дополнительные стили для этой страницы -->
+    <style>
+        /* Хлебные крошки */
+        .breadcrumbs {
+            padding: 100px 0 40px;
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-color) 100%);
+        }
+        
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb-nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .breadcrumb-nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .breadcrumb-nav i {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .breadcrumb-nav span {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .page-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+        }
+        
+        /* Табы команды */
+        .team-tabs {
+            padding: 60px 0;
+        }
+        
+        .tabs-header {
+            margin-bottom: 40px;
+        }
+        
+        .tabs-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background-color: var(--bg-light);
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .tab-btn i {
+            font-size: 1.2rem;
+        }
+        
+        .tab-btn.active {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            box-shadow: var(--shadow);
+        }
+        
+        .tab-btn:hover:not(.active) {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .tabs-content {
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--shadow);
+        }
+        
+        .tab-pane {
+            display: none;
+        }
+        
+        .tab-pane.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Профиль участника */
+        .team-member-profile {
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        .profile-header {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .profile-image {
+            position: relative;
+            flex-shrink: 0;
+        }
+        
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+        
+        .profile-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            box-shadow: var(--shadow);
+        }
+        
+        .profile-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .profile-info h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        
+        .profile-role {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .profile-quote {
+            font-style: italic;
+            color: var(--text-light);
+            padding: 20px;
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .profile-contacts {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: var(--bg-light);
+            border-radius: 30px;
+            transition: var(--transition);
+        }
+        
+        .contact-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .contact-link i {
+            font-size: 1.2rem;
+        }
+        
+        .profile-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .detail-section {
+            background-color: var(--bg-light);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+        
+        .detail-section:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .detail-section h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .detail-section h3 i {
+            color: var(--primary-color);
+        }
+        
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .contribution-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+        }
+        
+        .contribution-stat {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+        }
+        
+        .stat-value {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        /* Совместная работа */
+        .teamwork-content {
+            padding: 30px;
+        }
+        
+        .teamwork-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .teamwork-header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .teamwork-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .teamwork-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        
+        .teamwork-stat {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 25px;
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .teamwork-stat:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+        
+        .teamwork-process {
+            margin-bottom: 50px;
+        }
+        
+        .teamwork-process h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .process-step {
+            position: relative;
+            padding: 30px;
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .process-step:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+        }
+        
+        .step-content {
+            margin-top: 10px;
+        }
+        
+        .step-content h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        
+        .teamwork-quote {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
+            border-radius: var(--border-radius);
+            position: relative;
+        }
+        
+        .quote-content {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .quote-content i:first-child {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 3rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+        
+        .quote-content i:last-child {
+            position: absolute;
+            bottom: -30px;
+            right: 20px;
+            font-size: 3rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+        
+        .quote-content p {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--text-color);
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .quote-author {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-image {
+                margin: 0 auto;
+            }
+            
+            .profile-contacts {
+                justify-content: center;
+            }
+            
+            .tabs-nav {
+                flex-direction: column;
+            }
+            
+            .tab-btn {
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bullhorn logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">PR Профи</span>
+                            <span class="logo-sub">Портфолио 2025</span>
+                        </div>
+                    </a>
+                    <p>Сайт-презентация нашего пути в изучении Public Relations. Создан с целью демонстрации приобретенных навыков и проектов.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>О нас</h3>
+                        <ul>
+                            <li><a href="team.html">Команда</a></li>
+                            <li><a href="course.html">Курс PR</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="achievements.html">Достижения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Проекты</h3>
+                        <ul>
+                            <li><a href="project-batyrkhan.html">Батырхана</a></li>
+                            <li><a href="project-nikita.html">Никиты</a></li>
+                            <li><a href="project-rk1-rk2.html">РК1 и РК2</a></li>
+                            <li><a href="project-exam-site.html">О сайте</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ресурсы</h3>
+                        <ul>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Презентации</a></li>
+                            <li><a href="#">Исходники</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PR Профи. Все права защищены. Сайт создан как экзаменационный проект.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+    <script>
+        // Табы команды
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Убираем активный класс у всех кнопок
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    // Скрываем все табы
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+                    // Показываем выбранный таб
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Анимация прогресс-баров вклада
+            const statValues = document.querySelectorAll('.stat-value');
+            statValues.forEach(stat => {
+                const value = stat.textContent.replace('%', '');
+                stat.style.setProperty('--value', value + '%');
+                
+                // Анимация при появлении
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            stat.style.width = value + '%';
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(stat);
+            });
+        });
+    </script>
+</body>
+</html>

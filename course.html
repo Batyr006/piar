@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Профи | Курс PR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Загрузка...</p>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-bullhorn logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-main">PR Профи</span>
+                    <span class="logo-sub">by Батырхан & Никита</span>
+                </div>
+            </a>
+            
+            <nav class="nav">
+                <button class="nav-toggle" id="navToggle">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Главная</a></li>
+                    <li><a href="team.html" class="nav-link"><i class="fas fa-users"></i>Команда</a></li>
+                    <li><a href="course.html" class="nav-link active"><i class="fas fa-book-open"></i>Курс</a></li>
+                    <li><a href="skills.html" class="nav-link"><i class="fas fa-chart-line"></i>Навыки</a></li>
+                    <li><a href="achievements.html" class="nav-link"><i class="fas fa-trophy"></i>Достижения</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="projects-main.html" class="nav-link nav-projects"><i class="fas fa-rocket"></i>Проекты</a></li>
+                    <li><a href="contacts.html" class="nav-link nav-contacts"><i class="fas fa-envelope"></i>Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h1 class="page-title">Курс Public Relations</h1>
+            <p class="page-subtitle">Полное погружение в мир связей с общественностью: от теории к практике</p>
+        </div>
+    </section>
+
+    <!-- О курсе -->
+    <section class="course-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Что такое PR сегодня?</h2>
+                    <p>Public Relations — это искусство построения взаимовыгодных отношений между организацией и ее общественностью. На курсе мы изучили не только теорию, но и получили практические навыки создания эффективных PR-кампаний.</p>
+                    
+                    <div class="course-stats">
+                        <div class="course-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-details">
+                                <div class="stat-number">72</div>
+                                <div class="stat-label">Академических часа</div>
+                            </div>
+                        </div>
+                        <div class="course-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="stat-details">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">Тем изучено</div>
+                            </div>
+                        </div>
+                        <div class="course-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-details">
+                                <div class="stat-number">4</div>
+                                <div class="stat-label">Практических проекта</div>
+                            </div>
+                        </div>
+                        <div class="course-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="stat-details">
+                                <div class="stat-number">1</div>
+                                <div class="stat-label">Экзаменационный проект</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Обучение PR">
+                        <div class="image-caption">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Практические занятия по PR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программа курса -->
+    <section class="course-program">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Программа курса</h2>
+                <p class="section-description">Поэтапное изучение Public Relations от основ до продвинутых техник</p>
+            </div>
+            
+            <div class="program-timeline">
+                <!-- Модуль 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">1</div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Модуль 1: Основы PR</h3>
+                            <span class="timeline-duration">2 недели</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Знакомство с базовыми понятиями и принципами Public Relations</p>
+                            <div class="topics-list">
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>История и эволюция PR</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Основные модели PR</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Этика в PR</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>PR vs Реклама vs Маркетинг</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Модуль 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">2</div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Модуль 2: Исследования и анализ</h3>
+                            <span class="timeline-duration">3 недели</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Методы исследования аудитории и анализа медиа-пространства</p>
+                            <div class="topics-list">
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>SWOT-анализ в PR</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Исследование целевой аудитории</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Медиа-анализ</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Методы сбора данных</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Модуль 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">3</div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Модуль 3: Стратегическое планирование</h3>
+                            <span class="timeline-duration">3 недели</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Разработка PR-стратегий и коммуникационных планов</p>
+                            <div class="topics-list">
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Постановка PR-целей</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Разработка ключевых сообщений</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Планирование кампаний</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Бюджетирование PR-проектов</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Модуль 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">4</div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Модуль 4: PR-инструменты</h3>
+                            <span class="timeline-duration">4 недели</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Освоение основных инструментов и каналов коммуникации</p>
+                            <div class="topics-list">
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Работа со СМИ</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Создание пресс-релизов</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Организация мероприятий</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Digital PR и SMM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Модуль 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">5</div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Модуль 5: Кризисный PR</h3>
+                            <span class="timeline-duration">2 недели</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Управление репутацией в условиях кризиса</p>
+                            <div class="topics-list">
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Типы кризисов</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Планирование кризисных коммуникаций</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Работа с негативом</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Восстановление репутации</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Модуль 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-circle">6</div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Модуль 6: Измерение эффективности</h3>
+                            <span class="timeline-duration">2 недели</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Оценка результатов PR-деятельности и ROI</p>
+                            <div class="topics-list">
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>KPI в PR</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Методы оценки эффективности</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Отчетность в PR</span>
+                                </div>
+                                <div class="topic">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>ROI PR-кампаний</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Практическая часть -->
+    <section class="course-practice">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Практическая часть</h2>
+                <p class="section-description">Реальные кейсы и проекты, которые мы выполнили в рамках курса</p>
+            </div>
+            
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Кейс-стади</h3>
+                    <p>Анализ реальных PR-кампаний известных брендов с разбором стратегий и результатов</p>
+                    <ul class="feature-list">
+                        <li>12 разобранных кейсов</li>
+                        <li>Анализ успехов и ошибок</li>
+                        <li>Рекомендации по улучшению</li>
+                    </ul>
+                </div>
+                
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Групповые проекты</h3>
+                    <p>Совместная разработка PR-кампаний в командах с последующей презентацией</p>
+                    <ul class="feature-list">
+                        <li>Работа в командах по 3-4 человека</li>
+                        <li>Полный цикл: от идеи до презентации</li>
+                        <li>Обратная связь от преподавателей</li>
+                    </ul>
+                </div>
+                
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Индивидуальные задания</h3>
+                    <p>Выполнение практических заданий для отработки конкретных навыков</p>
+                    <ul class="feature-list">
+                        <li>Написание пресс-релизов</li>
+                        <li>Создание контент-планов</li>
+                        <li>Разработка медиа-китов</li>
+                    </ul>
+                </div>
+                
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Анализ эффективности</h3>
+                    <p>Оценка результатов PR-кампаний и разработка рекомендаций по оптимизации</p>
+                    <ul class="feature-list">
+                        <li>Работа с аналитикой</li>
+                        <li>Расчет ROI</li>
+                        <li>Разработка отчетов</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Результаты обучения -->
+    <section class="course-results">
+        <div class="container">
+            <div class="results-content">
+                <h2>Что мы получили от курса?</h2>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Системное мышление</h3>
+                        <p>Научились видеть PR как систему взаимосвязанных процессов и разрабатывать комплексные стратегии</p>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Практические навыки</h3>
+                        <p>Освоили конкретные инструменты и техники, которые можно сразу применять в работе</p>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Профессиональные связи</h3>
+                        <p>Познакомились с экспертами индустрии и единомышленниками</p>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Портфолио проектов</h3>
+                        <p>Создали 4 полноценных проекта, которые можно показывать работодателям</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Стили для этой страницы -->
+    <style>
+        .course-overview {
+            padding: 60px 0;
+        }
+        
+        .overview-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+        
+        .overview-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .overview-text h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        
+        .overview-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .course-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        
+        .course-stat {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+        
+        .course-stat:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-color);
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .overview-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .image-wrapper {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.8s ease;
+        }
+        
+        .image-wrapper:hover img {
+            transform: scale(1.05);
+        }
+        
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+        
+        .image-caption i {
+            font-size: 1.2rem;
+        }
+        
+        /* Timeline */
+        .program-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .program-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 30px;
+            width: 2px;
+            background-color: var(--primary-color);
+            opacity: 0.3;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .timeline-marker {
+            position: relative;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+        
+        .marker-circle {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+            z-index: 1;
+            position: relative;
+        }
+        
+        .marker-line {
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: calc(100% + 40px);
+            background-color: var(--primary-color);
+            opacity: 0.3;
+        }
+        
+        .timeline-item:last-child .marker-line {
+            display: none;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .timeline-content:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .timeline-header h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }
+        
+        .timeline-duration {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .timeline-body p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        .topics-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .topic {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-color);
+        }
+        
+        .topic i {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+        
+        /* Инструкторы */
+        .course-instructors {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+        
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .instructor-card {
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .instructor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .instructor-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .instructor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .instructor-card:hover .instructor-image img {
+            transform: scale(1.1);
+        }
+        
+        .instructor-info {
+            padding: 25px;
+        }
+        
+        .instructor-info h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--text-color);
+        }
+        
+        .instructor-role {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .instructor-bio {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .instructor-expertise {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .expertise-tag {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        /* Практическая часть */
+        .course-practice {
+            padding: 80px 0;
+        }
+        
+        .practice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .practice-card {
+            background-color: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: var(--transition);
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .practice-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .practice-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .practice-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        
+        .practice-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        /* Результаты */
+        .course-results {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-color) 100%);
+        }
+        
+        .results-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--text-color);
+        }
+        
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .result-item {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .result-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .result-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 1.8rem;
+        }
+        
+        .result-item h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        
+        .result-item p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .overview-content {
+                flex-direction: column;
+            }
+            
+            .program-timeline::before {
+                left: 25px;
+            }
+            
+            .timeline-marker {
+                margin-right: 20px;
+            }
+            
+            .marker-circle {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bullhorn logo-icon"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">PR Профи</span>
+                            <span class="logo-sub">Портфолио 2025</span>
+                        </div>
+                    </a>
+                    <p>Сайт-презентация нашего пути в изучении Public Relations. Создано с целью демонстрации приобретенных навыков и проектов.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>О нас</h3>
+                        <ul>
+                            <li><a href="team.html">Команда</a></li>
+                            <li><a href="course.html">Курс PR</a></li>
+                            <li><a href="skills.html">Навыки</a></li>
+                            <li><a href="achievements.html">Достижения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Проекты</h3>
+                        <ul>
+                            <li><a href="project-batyrkhan.html">Батырхана</a></li>
+                            <li><a href="project-nikita.html">Никиты</a></li>
+                            <li><a href="project-rk1-rk2.html">РК1 и РК2</a></li>
+                            <li><a href="project-exam-site.html">Этот сайт</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ресурсы</h3>
+                        <ul>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Презентации</a></li>
+                            <li><a href="#">Исходники</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PR Профи. Все права защищены. Сайт создан как экзаменационный проект.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+    <script>
+        // Анимация таймлайна
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            timelineItems.forEach(item => observer.observe(item));
+            
+            // Анимация статистики
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const value = parseInt(stat.textContent);
+                let current = 0;
+                const increment = value / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= value) {
+                        stat.textContent = value;
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, 30);
+            });
+        });
+    </script>
+</body>
+</html>
